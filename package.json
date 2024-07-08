@@ -1,0 +1,35 @@
+{
+  "name": "walk-tree-list",
+  "version": "1.2.0",
+  "description": "Traversing tree nodes",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup --config rollup.config.ts --configPlugin typescript"
+  },
+  "author": "chennlang",
+  "license": "ISC",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "tree",
+    "walk-tree-list",
+    "walk-tree",
+    "tree-list",
+    "traverse"
+  ],
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.6",
+    "rollup": "^4.18.0"
+  }
+}
