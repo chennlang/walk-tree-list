@@ -30,7 +30,7 @@ jobs:
       - name: 构建 dist
         run: |
           npm install -g pnpm@latest-8
-          pnpm install --no-frozen-lockfile
+          pnpm install
           pnpm run build
 
       - name: 发布 npm 包
