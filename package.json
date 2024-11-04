@@ -1,26 +1,7 @@
 {
   "name": "walk-tree-list",
-  "version": "1.2.0",
+  "version": "1.4.0",
   "description": "Traversing tree nodes",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup --config rollup.config.ts --configPlugin typescript"
-  },
-  "author": "chennlang",
-  "license": "ISC",
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs"
-    }
-  },
-  "files": [
-    "dist"
-  ],
-  "publishConfig": {
-    "access": "public"
-  },
   "keywords": [
     "tree",
     "walk-tree-list",
@@ -28,8 +9,33 @@
     "tree-list",
     "traverse"
   ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup --config rollup.config.ts --configPlugin typescript"
+  },
+  "bugs": {
+    "url": "https://github.com/chennlang/walk-tree-list/issues"
+  },
+  "homepage": "https://github.com/chennlang/walk-tree-list#readme",
+  "author": "chennlang",
+  "license": "ISC",
+  "main": "dist/index.cjs",
+  "module": "dist/index.es",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "@rollup/plugin-typescript": "^11.1.6",
-    "rollup": "^4.18.0"
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^11.0.0",
+    "@semantic-release/npm": "^12.0.1",
+    "@semantic-release/release-notes-generator": "^14.0.1",
+    "rollup": "^4.18.0",
+    "semantic-release": "^24.2.0"
   }
 }
