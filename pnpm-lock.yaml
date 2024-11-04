@@ -4,10 +4,15 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+dependencies:
+  tslib:
+    specifier: ^2.8.1
+    version: 2.8.1
+
 devDependencies:
   '@rollup/plugin-typescript':
     specifier: ^11.1.6
-    version: 11.1.6(rollup@4.18.0)(typescript@5.5.3)
+    version: 11.1.6(rollup@4.18.0)(tslib@2.8.1)(typescript@5.5.3)
   '@semantic-release/changelog':
     specifier: ^6.0.3
     version: 6.0.3(semantic-release@24.2.0)
@@ -399,7 +404,7 @@ packages:
       config-chain: 1.1.13
     dev: true
 
-  /@rollup/plugin-typescript@11.1.6(rollup@4.18.0)(typescript@5.5.3):
+  /@rollup/plugin-typescript@11.1.6(rollup@4.18.0)(tslib@2.8.1)(typescript@5.5.3):
     resolution: {integrity: sha512-R92yOmIACgYdJ7dJ97p4K69I8gg6IEHt8M7dUBxN3W6nrO8uUxX5ixl0yU/N3aZTi8WhPuICvOHXQvF6FaykAA==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
@@ -415,6 +420,7 @@ packages:
       '@rollup/pluginutils': 5.1.0(rollup@4.18.0)
       resolve: 1.22.8
       rollup: 4.18.0
+      tslib: 2.8.1
       typescript: 5.5.3
     dev: true
 
@@ -2647,6 +2653,9 @@ packages:
     resolution: {integrity: sha512-aXJDbk6SnumuaZSANd21XAo15ucCDE38H4fkqiGsc3MhCK+wOlZvLP9cB/TvpHT0mOyWgC4Z8EwRlzqYSUzdsA==}
     engines: {node: '>= 0.4'}
     dev: true
+
+  /tslib@2.8.1:
+    resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
 
   /type-fest@1.4.0:
     resolution: {integrity: sha512-yGSza74xk0UG8k+pLh5oeoYirvIiWo5t0/o3zHHAO2tRDiZcxWP7fywNlXhqb6/r6sWvwi+RsyQMWhVLe4BVuA==}
