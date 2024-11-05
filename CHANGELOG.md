@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/chennlang/walk-tree-list/compare/v1.4.0...v1.5.0) (2024-11-05)
+
+
+### Features
+
+* 格式化测试 ([5f37cd6](https://github.com/chennlang/walk-tree-list/commit/5f37cd65de79bbd0aa974ed9ffee580a4d42ff64))
+
 # 1.0.0 (2024-11-04)
 
 
