@@ -1,7 +1,7 @@
-import walkTree from './walkTree';
+import walkTree from "./walkTree";
 
-describe('walkTree', () => {
-  it('should call the callback function for each node in the tree', () => {
+describe("walkTree", () => {
+  it("should call the callback function for each node in the tree", () => {
     const mockFn = jest.fn();
     const nodes = [
       { id: 1, children: [{ id: 2 }, { id: 3 }] },
@@ -19,7 +19,7 @@ describe('walkTree', () => {
   });
 
   it('should return true if the callback function returns "end"', () => {
-    const mockFn = jest.fn(() => 'end');
+    const mockFn = jest.fn(() => "end");
     const nodes = [
       { id: 1, children: [{ id: 2 }, { id: 3 }] },
       { id: 4, children: [{ id: 5 }] },
@@ -33,7 +33,7 @@ describe('walkTree', () => {
   });
 
   it('should return false if the callback function returns "continue"', () => {
-    const mockFn = jest.fn(() => 'continue');
+    const mockFn = jest.fn(() => "continue");
     const nodes = [
       { id: 1, children: [{ id: 2 }, { id: 3 }] },
       { id: 4, children: [{ id: 5 }] },
@@ -50,14 +50,14 @@ describe('walkTree', () => {
     expect(mockFn).toHaveBeenCalledWith(nodes[1].children[0], nodes[1]);
   });
 
-  it('should traverse the tree using custom field names', () => {
+  it("should traverse the tree using custom field names", () => {
     const mockFn = jest.fn();
     const nodes = [
       { id: 1, customChildren: [{ id: 2 }, { id: 3 }] },
       { id: 4, customChildren: [{ id: 5 }] },
     ];
 
-    walkTree(nodes, mockFn, { children: 'customChildren' });
+    walkTree(nodes, mockFn, { children: "customChildren" });
 
     expect(mockFn).toHaveBeenCalledTimes(5);
     expect(mockFn).toHaveBeenCalledWith(nodes[0], undefined);
